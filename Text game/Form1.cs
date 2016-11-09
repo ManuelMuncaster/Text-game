@@ -29,12 +29,15 @@ namespace Text_game
         }
         private void Form1_KeyDown(object sender, KeyEventArgs e)
         {
-            if (e.KeyCode == Keys.M)
+            if (e.KeyCode == Keys.B)
             {
-                scene = scene++;
+                if (scene == 0)
+                {
+                    scene = 1;
+                }
 
             }
-            else if (e.KeyCode == Keys.B)
+            else if (e.KeyCode == Keys.M)
             {
 
             }
@@ -107,17 +110,32 @@ namespace Text_game
                     greenOutputlabel.Visible = false;
                     break;
                 case 9:
-                    eventOutputlabel.Text = "You pull out your newly acquired blade and take a defensive stance. The Dread King takes the first swing and you parry back and forth. He nearly chops off your head a few times, but you are reinvigorated by a sudden strength and focus. He slips through your stance and slices your chest, but you don't feel anything. You press on fighting and find yourself gaining the upperhand. You counter a large overhead swing and swing with all of your might; chooping the head of the Dread King off from his body.";
-                    blueOutputLabel.Text = "Climb into the window";
-                    redOutputlabel.Text = "Continue walking on the roof";
+                    eventOutputlabel.Text = "You pull out your newly acquired blade and take a defensive stance. The Dread King takes the first swing and you parry back and forth. He nearly chops off your head a few times, but you are reinvigorated by a sudden strength and focus. He slips through your stance and slices your chest, but you don't feel anything. You press on fighting and find yourself gaining the upperhand. You counter a large overhead swing and swing with all of your might; chooping the head of the Dread King off from his body. You decide to try and grab as much loot as you can, but three Steamwinders (the king's elite guard) storm into the throne room and overwhelm you. Your head is soon spit upon a steak. GAME OVER";
+                    blueOutputLabel.Text = "Play again?";
+                    redOutputlabel.Text = "Quit!";
                     yellowOutputlabel.Visible = false;
                     greenOutputlabel.Visible = false;
                     break;
                 case 10:
+                    eventOutputlabel.Text = "You pull out your newly acquired blade and take a defensive stance. The Dread King takes the first swing and you parry back and forth. He nearly chops off your head a few times, but you are reinvigorated by a sudden strength and focus. He slips through your stance and slices your chest, but you don't feel anything. You press on fighting and find yourself gaining the upperhand. You counter a large overhead swing and swing with all of your might; chooping the head of the Dread King off from his body. You decide to take the Dread King's head with you in a bag. You smash through a window and climb down from it using vines that had been growing on the wall for years. You manage to get onto the ground and run far, far away from the castle. You return the head for a massive sum of money. SUPER WIN VICTORY!!!";
+                    blueOutputLabel.Text = "Play again?";
+                    redOutputlabel.Text = "Quit!";
+                    yellowOutputlabel.Visible = false;
+                    greenOutputlabel.Visible = false;
                     break;
                 case 11:
+                    eventOutputlabel.Text = "You decide to enter through the front gate. You walk up to the gate and try to enter through a side door. The door is locked. Do you try and pick the lock or kick the door down with your mighty legs?";
+                    blueOutputLabel.Text = "Pick the lock";
+                    redOutputlabel.Text = "Kick the door down";
+                    yellowOutputlabel.Visible = false;
+                    greenOutputlabel.Visible = false;
                     break;
                 case 12:
+                    eventOutputlabel.Text = "You take out your lock picking tools and get to work on the lock. After some time, you get really close to opening the lock when a guard walks out from another door and takes his war hammer out. You are crushed to a pulp. GAME OVER";
+                    blueOutputLabel.Text = "Play again?";
+                    redOutputlabel.Text = "Quit!";
+                    yellowOutputlabel.Visible = false;
+                    greenOutputlabel.Visible = false;
                     break;
                 case 13:
                     break;
