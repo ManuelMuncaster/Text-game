@@ -29,25 +29,54 @@ namespace Text_game
         }
         private void Form1_KeyDown(object sender, KeyEventArgs e)
         {
-            if (e.KeyCode == Keys.B)
+            if (e.KeyCode == Keys.B) //blue button
             {
+                // Roof
                 if (scene == 0)
                 {
                     scene = 1;
                 }
+                else if (scene == 1)
+                {
+                    scene = 2;
+                }
+                else if (scene == 2)
+                {
+                    scene = 0;
+                }
 
+                // Front gate
+                else if (scene == 11)
+                {
+                    scene = 12;
+                }
+                else if (scene == 12)
+                {
+                    scene = 0;
+                }
+                    
+                
             }
-            else if (e.KeyCode == Keys.M)
+            else if (e.KeyCode == Keys.M) //red button
             {
-
+                if (scene == 0)
+                {
+                    scene = 11;
+                }
             }
-            else if (e.KeyCode == Keys.H)
+            else if (e.KeyCode == Keys.H) //yellow button
             {
-
+                if (scene == 0)
+                {
+                    scene = 14;
+                }
             }
-            else if (e.KeyCode == Keys.J)
+            else if (e.KeyCode == Keys.J) // green button
             {
-
+                if (scene == 0)
+                {
+                    scene = 23;
+                }
             }
             switch (scene)
             {
@@ -279,7 +308,7 @@ namespace Text_game
                     greenButton.Visible = false;
                     break;
                 case 26:
-                    eventOutputlabel.Text = "You decide to break into the strongbox as it looks like it is too heavy to carry in your rucksack. Unfortunatly, while you were trying to pry open the strongbox, the guards were able to get into the room. ";
+                    eventOutputlabel.Text = "You decide to break into the strongbox as it looks like it is too heavy to carry in your rucksack. Unfortunatly, while you were trying to pry open the strongbox, the guards were able to get into the room. You try to throw the box at one of the guards to stun him, but the box narrowly misses him. The guards kill you before you can draw your dagger. GAME OVER.";
                     blueOutputLabel.Text = "Play again?";
                     redOutputlabel.Text = "Quit!";
                     yellowOutputlabel.Visible = false;
@@ -288,18 +317,76 @@ namespace Text_game
                     greenButton.Visible = false;
                     break;
                 case 27:
+                    eventOutputlabel.Text = "You run into the woods to try and lose the guards chasing you. You slow down and take a look at your surroundings. You seem to have gotten yourself lost in the forest. You try to get out of the forest the way you came in, but you walk out of the forest right into 10 guards. You are killed on the spot. GAME OVER";
+                    blueOutputLabel.Text = "Climb into the window.";
+                    redOutputlabel.Text = "Continue walking on the roof.";
+                    yellowOutputlabel.Visible = false;
+                    greenOutputlabel.Visible = false;
                     break;
                 case 28:
+                    eventOutputlabel.Text = "You run into the tall grass and lay down so that you are harder to find. The guards run by you and you start crawling away from the castle. You make it back to the town and open the strongbox. It contains a huge sum of 5 million gold. YOU MADE IT OUT WITH A MODERATE SUM OF GOLD. GOOD JOB!";
+                    blueOutputLabel.Text = "Play again?";
+                    redOutputlabel.Text = "Quit!";
+                    yellowOutputlabel.Visible = false;
+                    greenOutputlabel.Visible = false;
+                    yellowButton.Visible = false;
+                    greenButton.Visible = false;
                     break;
                 case 29:
+                    eventOutputlabel.Text = "A wild Rattata appeared!";
+                    blueOutputLabel.Text = "Capture it!!!";
+                    redOutputlabel.Visible = false;
+                    redButton.Visible = false;
+                    yellowOutputlabel.Visible = false;
+                    greenOutputlabel.Visible = false;
+                    yellowButton.Visible = false;
+                    greenButton.Visible = false;
                     break;
                 case 30:
+                    eventOutputlabel.Text = "You decide to head up the flight of stairs. You begin to climb up the stairs with your dagger drawn just in case you encounter someone. You reach the top of the stairs and see a large lift like structure that leads to what seems like a large room.... but a giant stands in your way. Do you fight the giant or run away?";
+                    blueOutputLabel.Text = "Fight the giant";
+                    redOutputlabel.Text = "Run away";
+                    yellowOutputlabel.Visible = false;
+                    greenOutputlabel.Visible = false;
+                    yellowButton.Visible = false;
+                    greenButton.Visible = false;
                     break;
                 case 31:
+                    eventOutputlabel.Text = "You charge towards the giant and avoid his first massive swing. Your dagger starts to do work on the giants right leg, but he swings his massive club onto you. GAME OVER.";
+                    blueOutputLabel.Text = "Play again?";
+                    redOutputlabel.Text = "Quit!";
+                    yellowOutputlabel.Visible = false;
+                    greenOutputlabel.Visible = false;
+                    yellowButton.Visible = false;
+                    greenButton.Visible = false;
                     break;
                 case 32:
+                    eventOutputlabel.Text = "You quickly turn around and try to open the doors you just came through, but they are locked. You turn around to see the giant looming over you. Blood splatters all over the door. GAME OVER";
+                    blueOutputLabel.Text = "Play again?";
+                    redOutputlabel.Text = "Quit!";
+                    yellowOutputlabel.Visible = false;
+                    greenOutputlabel.Visible = false;
+                    yellowButton.Visible = false;
+                    greenButton.Visible = false;
                     break;
                 case 33:
+                    eventOutputlabel.Text = "You charge towards the giant and avoid his first massive swing. After your long sprint, you get to his leg and use your dagger like a ice pick; slowly climbing up his body. He tries to shake you off, but you hang on for dear life. You climb onto the giants head and you plunge your dagger into his skull, killing the giant instantly. You find a freshly forged blade on the lift and you sheath your dagger. After pulling a lever on the lift, the lift begins to move upwards. You find some strange looking doors which give you a feeling of terror.";
+                    blueOutputLabel.Text = "Continue";
+                    redOutputlabel.Visible = false;
+                    yellowOutputlabel.Visible = false;
+                    greenOutputlabel.Visible = false;
+                    yellowButton.Visible = false;
+                    greenButton.Visible = false;
+                    redButton.Visible = false;
+                    break;
+                case 34:
+                    eventOutputlabel.Text = "You sneak up on the Rattata and capture it in your rucksack. You bring it back to town to see if you could sell it for even 1 gold. It turns out that no one has seen the creature before and you sell it for 900 trillion gold. YOU WIN AND HAVE 99% ALL THE GOLD IN THE WORLD!!!! GODLIKE!!!!!!";
+                    blueOutputLabel.Text = "Play again?";
+                    redOutputlabel.Text = "Quit!";
+                    yellowOutputlabel.Visible = false;
+                    greenOutputlabel.Visible = false;
+                    yellowButton.Visible = false;
+                    greenButton.Visible = false;
                     break;
 
             }
