@@ -92,6 +92,66 @@
   <ItemGroup>
     <None Include="Resources\yellow_50x50.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\All_hail.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\campana_aoe.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\creaking_door_opening_sound_effect.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Diablo_-_Classic_Gold_Drop_Sound_With_Item_Drop_So.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FAIL_SOUND_EFFECT.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Final_Fantasy_IV_Music_-_Fanfare.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Male_Death01.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Male_Death02.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Male_Death06.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sound_Effect_Arrow_woosh_splat_vibration.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Swordfight01.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Swordfight03.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Swordfight05.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Battering_Ram01.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Wolf05.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Wolf06.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pok_mon_-_Rattata_Cry_.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pokemon_Cries_-_019_Rattata.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Abomination Sound Effects - Hearthstone.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Giant 2.wav" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

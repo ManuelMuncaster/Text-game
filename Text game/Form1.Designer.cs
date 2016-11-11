@@ -30,7 +30,6 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.eventOutputlabel = new System.Windows.Forms.Label();
-            this.eventPicturebox = new System.Windows.Forms.PictureBox();
             this.blueButton = new System.Windows.Forms.PictureBox();
             this.redButton = new System.Windows.Forms.PictureBox();
             this.yellowButton = new System.Windows.Forms.PictureBox();
@@ -39,7 +38,6 @@
             this.redOutputlabel = new System.Windows.Forms.Label();
             this.yellowOutputlabel = new System.Windows.Forms.Label();
             this.greenOutputlabel = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.eventPicturebox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.blueButton)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.redButton)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.yellowButton)).BeginInit();
@@ -48,21 +46,13 @@
             // 
             // eventOutputlabel
             // 
-            this.eventOutputlabel.Font = new System.Drawing.Font("Constantia", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.eventOutputlabel.Font = new System.Drawing.Font("Constantia", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.eventOutputlabel.ForeColor = System.Drawing.Color.White;
             this.eventOutputlabel.Location = new System.Drawing.Point(12, 9);
             this.eventOutputlabel.Name = "eventOutputlabel";
-            this.eventOutputlabel.Size = new System.Drawing.Size(456, 133);
+            this.eventOutputlabel.Size = new System.Drawing.Size(560, 291);
             this.eventOutputlabel.TabIndex = 0;
             this.eventOutputlabel.Text = "label1";
-            // 
-            // eventPicturebox
-            // 
-            this.eventPicturebox.Location = new System.Drawing.Point(12, 145);
-            this.eventPicturebox.Name = "eventPicturebox";
-            this.eventPicturebox.Size = new System.Drawing.Size(456, 148);
-            this.eventPicturebox.TabIndex = 1;
-            this.eventPicturebox.TabStop = false;
             // 
             // blueButton
             // 
@@ -102,7 +92,7 @@
             // 
             // blueOutputLabel
             // 
-            this.blueOutputLabel.Font = new System.Drawing.Font("Constantia", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.blueOutputLabel.Font = new System.Drawing.Font("Constantia", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.blueOutputLabel.ForeColor = System.Drawing.Color.White;
             this.blueOutputLabel.Location = new System.Drawing.Point(72, 327);
             this.blueOutputLabel.Name = "blueOutputLabel";
@@ -112,7 +102,7 @@
             // 
             // redOutputlabel
             // 
-            this.redOutputlabel.Font = new System.Drawing.Font("Constantia", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.redOutputlabel.Font = new System.Drawing.Font("Constantia", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.redOutputlabel.ForeColor = System.Drawing.Color.White;
             this.redOutputlabel.Location = new System.Drawing.Point(72, 401);
             this.redOutputlabel.Name = "redOutputlabel";
@@ -122,7 +112,7 @@
             // 
             // yellowOutputlabel
             // 
-            this.yellowOutputlabel.Font = new System.Drawing.Font("Constantia", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.yellowOutputlabel.Font = new System.Drawing.Font("Constantia", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.yellowOutputlabel.ForeColor = System.Drawing.Color.White;
             this.yellowOutputlabel.Location = new System.Drawing.Point(72, 473);
             this.yellowOutputlabel.Name = "yellowOutputlabel";
@@ -132,7 +122,7 @@
             // 
             // greenOutputlabel
             // 
-            this.greenOutputlabel.Font = new System.Drawing.Font("Constantia", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.greenOutputlabel.Font = new System.Drawing.Font("Constantia", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.greenOutputlabel.ForeColor = System.Drawing.Color.White;
             this.greenOutputlabel.Location = new System.Drawing.Point(72, 537);
             this.greenOutputlabel.Name = "greenOutputlabel";
@@ -145,7 +135,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
-            this.ClientSize = new System.Drawing.Size(480, 596);
+            this.ClientSize = new System.Drawing.Size(584, 596);
             this.Controls.Add(this.greenOutputlabel);
             this.Controls.Add(this.yellowOutputlabel);
             this.Controls.Add(this.redOutputlabel);
@@ -154,13 +144,11 @@
             this.Controls.Add(this.yellowButton);
             this.Controls.Add(this.redButton);
             this.Controls.Add(this.blueButton);
-            this.Controls.Add(this.eventPicturebox);
             this.Controls.Add(this.eventOutputlabel);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
             this.Text = "Castle Heist";
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyDown);
-            ((System.ComponentModel.ISupportInitialize)(this.eventPicturebox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.blueButton)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.redButton)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.yellowButton)).EndInit();
@@ -172,7 +160,6 @@
         #endregion
 
         private System.Windows.Forms.Label eventOutputlabel;
-        private System.Windows.Forms.PictureBox eventPicturebox;
         private System.Windows.Forms.PictureBox blueButton;
         private System.Windows.Forms.PictureBox redButton;
         private System.Windows.Forms.PictureBox yellowButton;
